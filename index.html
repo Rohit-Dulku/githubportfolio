@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit Dulku | Electrical Engineer Portfolio</title>
+    <!-- Icon Link -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         :root {
@@ -88,15 +89,36 @@
             font-size: 0.8rem;
             margin-right: 5px;
         }
-<a href="/githubportfolio/Resume.pdf" class="resume-btn" target="_blank">
-   <i class="fas fa-file-pdf"></i> Download Resume
-</a>
+
+        .resume-btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .resume-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .contact-links { margin-top: 25px; }
+
         .contact-links a {
             color: white;
             font-size: 1.5rem;
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            transition: 0.3s;
         }
+        
+        .contact-links a:hover { color: var(--secondary); }
     </style>
 </head>
 <body>
@@ -104,10 +126,16 @@
 <header>
     <h1>ROHIT DULKU</h1>
     <p>Electrical Engineer (MS) | PCB Design | Hardware Integration</p>
+    
+    <!-- Download Button correctly placed in Body -->
+    <a href="/githubportfolio/Resume.pdf" class="resume-btn" target="_blank">
+       <i class="fas fa-file-pdf"></i> Download Resume
+    </a>
+
     <div class="contact-links">
-        <a href="mailto:rdulku950@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="mailto:rdulku950@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
 </header>
 
@@ -120,13 +148,11 @@
 
 <div class="container">
     
-    <!-- ABOUT -->
     <section id="about">
         <h2>Professional Summary</h2>
         <p>Recently graduated Electrical Engineer (MS) with special experience in PCB design and hardware integration. I enjoy working with cross-functional teams in the life sciences industry to build and troubleshoot systems that keep automated machinery operating for long periods of time.</p>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
@@ -145,7 +171,6 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience">
         <h2>Work Experience</h2>
         <div class="card">
@@ -156,12 +181,11 @@
                 <li>Managed component lifecycle updates and Peripump control board firmware (.hex).</li>
                 <li>Created detailed test reports and fabrication files (BOMs).</li>
             </ul>
-            <img src="images/janus.jpeg" alt="Janus Machine Integration" class="project-img">
-            <img src="images/pcb.jpeg" alt="PCB Validation" class="project-img">
+            <img src="/githubportfolio/images/janus.jpeg" alt="Janus Machine Integration" class="project-img">
+            <img src="/githubportfolio/images/pcb.jpeg" alt="PCB Validation" class="project-img">
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
         <h2>Engineering Projects</h2>
         
@@ -169,18 +193,17 @@
             <h3>Lighted Wall Panel (Capstone)</h3>
             <span class="badge">Altium</span> <span class="badge">Power Systems</span>
             <p>Developed a 48-cell interactive panel for physical therapy. I transitioned the architecture to 12V and designed a custom Arduino shield to manage 576 LEDs efficiently.</p>
-            <img src="images/wall-panel.jpeg" alt="Capstone Project" class="project-img">
+            <img src="/githubportfolio/images/wall-panel.jpeg" alt="Capstone Project" class="project-img">
         </div>
 
         <div class="card">
             <h3>Digital Measuring Cup</h3>
             <span class="badge">Arduino</span> <span class="badge">Sensors</span>
             <p>Automated liquid level indicator using water level sensors and LCD feedback. Programmed 3-stage threshold logic for user alerts.</p>
-            <img src="images/cup.jpeg" alt="Measuring Cup Project" class="project-img">
+            <img src="/githubportfolio/images/cup.jpeg" alt="Measuring Cup Project" class="project-img">
         </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education">
         <h2>Education</h2>
         <p><strong>MS in Electrical Engineering</strong> | UMass Lowell (GPA 4.0)</p>
@@ -190,9 +213,8 @@
 </div>
 
 <footer style="text-align: center; padding: 2rem; background: var(--primary); color: white;">
-    <p>&copy; 2026 Rohit Dulku | Somerville, MA</p>
+    <p>&copy; 2024 Rohit Dulku | Somerville, MA</p>
 </footer>
 
 </body>
 </html>
-
