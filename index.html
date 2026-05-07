@@ -37,7 +37,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             z-index: 1000;
             flex-wrap: wrap;
         }
@@ -47,22 +47,22 @@
             color: var(--primary);
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
 
         section { margin-bottom: 4rem; scroll-margin-top: 80px; }
 
-        h2 { border-bottom: 3px solid var(--secondary); display: inline-block; padding-bottom: 5px; }
+        h2 { border-bottom: 3px solid var(--secondary); display: inline-block; padding-bottom: 5px; margin-bottom: 1.5rem; }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 15px;
         }
 
@@ -87,8 +87,10 @@
             color: white;
             padding: 3px 10px;
             border-radius: 15px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
         }
 
         .resume-btn {
@@ -116,10 +118,11 @@
             font-size: 1.5rem;
             margin: 0 15px;
             text-decoration: none;
-            transition: 0.3s;
         }
         
         .contact-links a:hover { color: var(--secondary); }
+
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
@@ -133,9 +136,9 @@
     </a>
 
     <div class="contact-links">
-        <a href="mailto:rdulku950@gmail.com" title="Email Me"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:rdulku950@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
     </div>
 </header>
 
@@ -145,7 +148,7 @@
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#awards">Awards</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
 </nav>
 
 <div class="container">
@@ -159,40 +162,40 @@
         <h2>Technical Skills</h2>
         <div class="skills-grid">
             <div class="card">
-                <strong>Design & Simulation</strong><br>
-                Altium 365, SolidWorks, MATLAB, LTspice, CST Studio
+                <strong><i class="fas fa-microchip"></i> Hardware & Fabrication</strong><br>
+                PCB Design (Altium 365), Complex circuit problem-solving, Breadboard building, Soldering, 3D-Printing, Fabrication, Transformers, High voltage machines.
             </div>
             <div class="card">
-                <strong>Hardware</strong><br>
-                Oscilloscope, Soldering, PCB Troubleshooting, Arduino/RPi
+                <strong><i class="fas fa-tools"></i> Lab Equipment</strong><br>
+                Oscilloscope, Function Generator, AC/DC Power Supply, Benchtop Multimeter, Voltmeter, Decade Box, Analog Discovery.
             </div>
             <div class="card">
-                <strong>Software & Communication</strong><br>
-                I2C, SPI, Winprep, Python, C++, Oracle Agile PLM
+                <strong><i class="fas fa-code"></i> Software & Programming</strong><br>
+                MATLAB, Arduino, Matplotlib, C++, Github, Raspberry Pi, Multisim, LTspice, Diptrace, Quartus Prime, Winprep, Oracle Agile PLM, SolidWorks, Visio.
+            </div>
+            <div class="card">
+                <strong><i class="fas fa-briefcase"></i> Professional Tools</strong><br>
+                Microsoft Office Suite (Word, Excel, Outlook, PowerPoint, OneNote), Adobe, Notepad.
             </div>
         </div>
     </section>
 
     <section id="experience">
         <h2>Work Experience</h2>
-        
-        <!-- Role 1: Revvity -->
         <div class="card">
             <h3>Electrical Engineering Intern/Co-op | Revvity</h3>
-            <p><em>May 2024 – Aug 2024 | Hopkinton, MA</em></p>
+            <p><em>May 2024 – Sep 2024 | Hopkinton, MA</em></p>
             <ul>
                 <li>Improved hardware by designing and modifying PCBs for Janus/Fontus liquid handling systems.</li>
                 <li>Managed component lifecycle updates and Peripump control board firmware (.hex).</li>
-                <li>Created test reports and fabrication files using Altium Designer (BOMs).</li>
+                <li>Created detailed test reports and fabrication files (BOMs).</li>
                 <li>Programmed PCBs using MPLABs IPE and .hex binary code.</li>
-                <li>Replaced PCBs inside machinery, managing complex wiring and identical cable connections under strict safety protocols.</li>
-                <li>Worked on the primary electrical infrastructure of Janus G3 and Fontus automated liquid handling workstations. These systems utilize a complex multi-board architecture to manage high-precision 8-tip Varispan pipetting arms and high-throughput 96/384-tip arrays.</li>
+                <li>Replaced PCBs inside machinery, managing complex wiring and identical cable connections.</li>
             </ul>
-            <img src="/githubportfolio/images/janus.jpeg" alt="Janus Machine Integration" class="project-img">
+            <img src="/githubportfolio/images/janus.jpeg" alt="Janus Machine" class="project-img">
             <img src="/githubportfolio/images/pcb.jpeg" alt="PCB Validation" class="project-img">
         </div>
 
-        <!-- Role 2: Circuits II LA -->
         <div class="card">
             <h3>Circuits II Learning Assistant | UMass Lowell</h3>
             <p><em>Aug 2024 – Dec 2024 | Lowell, MA</em></p>
@@ -200,7 +203,6 @@
                 <li>Graded and provided technical feedback on lab reports for undergraduate students.</li>
                 <li>Managed equipment use and monitored safety activity during laboratory sessions.</li>
                 <li>Assisted students with utilizing oscilloscopes, function generators, and power supplies.</li>
-                <li>Provided solutions to complex electrical equations and supported student problem-solving.</li>
             </ul>
         </div>
     </section>
@@ -210,65 +212,60 @@
         
         <div class="card">
             <h3>Lighted Wall Panel (Capstone)</h3>
-            <span class="badge">Altium</span> <span class="badge">Power Systems</span>
-            <p>Developed a 48-cell interactive panel for physical therapy. I transitioned the architecture to 12V and designed a custom Arduino shield to manage 576 LEDs efficiently.</p>
-            <p>Enhanced motor skills and engagement through lighting and audio feedback.</p>
-            <p>System Control: Managed by multiple Arduino Mega boards</p>
-            <p>LED Cells: Custom 3D-printed enclosures.</p>
-            <p>User Input: Controlled by rotary encoders.</p>
-            <p>For the mechanical design</p>
-            <p>3D-Printed Enclosures: Custom designed to house 12 LEDs and rotary encoder to ensure durability.</p>
-            <p>Material Choice: PLA used for the enclosure and PETG used for transparent cover.</p>
-            <p>Tactile Feedback: Rotary encoder and custom knob cover offer tactility during rotation</p>
-            <p>For the circuit and electrical design</p> 
-            <p>Schematic Layout: Eight LED cells per Arduino Mega and allows for modulelarity and independent control</p>  
-            <p>Custom Arduino Shield: Streamlines connections and reduces wiring complexity.</p>
-            <p>Power management: Upgraded from 5V to 12V architecture to reduce current draw and improve efficiency for 576 LEDs. Also decoupling capacitors added for power stability. </p>
-            <p>For the software portion</p>
-            <p>LED Control: Code manages individual LED cells for brightness and color modes.</p>
-            <p>Encoder Input Handling: Encoders required pullup resistors to ensure accurate input.</p>
-            <p>Modular Code Structure: Each cell operates independently, allowing for scalability</p>
-            <img src="/githubportfolio/images/wall-panel.jpeg" alt="Capstone Project" class="project-img">
-            <img src="/githubportfolio/images/blockdiagram.png" alt="Capstone Project" class="project-img">
-            <img src="/githubportfolio/images/LEDCellEnclosure.png" alt="Capstone Project" class="project-img">
-            <img src="/githubportfolio/images/AltiumDesign.png" alt="Capstone Project" class="project-img">
-            <img src="/githubportfolio/images/Software.png" alt="Capstone Project" class="project-img">
-            <img src="/githubportfolio/images/finaldesign.jpeg" alt="Capstone Project" class="project-img">
+            <span class="badge">Altium</span> <span class="badge">12V Architecture</span>
+            <p>Developed a 48-cell interactive panel for physical therapy. Designed a custom Arduino shield to manage 576 LEDs and transitioned the system to 12V for improved efficiency.</p>
+            <img src="/githubportfolio/images/wall-panel.jpeg" alt="Capstone" class="project-img">
+        </div>
+
+        <div class="card">
+            <h3>Butterworth Filter Project</h3>
+            <span class="badge">MATLAB</span> <span class="badge">Multisim</span>
+            <p>Determined cutoff frequencies using MATLAB and verified the frequency response through Multisim simulation. Validated the physical breadboard circuit using an Oscilloscope to record waveform cutoffs.</p>
         </div>
 
         <div class="card">
             <h3>Digital Measuring Cup</h3>
-            <span class="badge">Arduino</span> <span class="badge">Sensors</span>
-            <p>Automated liquid level indicator using water level sensors and LCD feedback. Programmed 3-stage threshold logic for user alerts.</p>
-            <img src="/githubportfolio/images/cup.jpeg" alt="Measuring Cup Project" class="project-img">
+            <span class="badge">Arduino</span> <span class="badge">I2C LCD</span>
+            <p>Automated liquid level indicator with visual/auditory feedback using ultrasonic sensors and 3-stage threshold logic.</p>
+            <img src="/githubportfolio/images/cup.jpeg" alt="Measuring Cup" class="project-img">
+        </div>
+
+        <div class="card">
+            <h3>Traffic Light System</h3>
+            <span class="badge">Arduino</span> <span class="badge">Embedded Logic</span>
+            <p>Programmed a dual-set traffic light controller (6 LEDs) on a breadboard to manage timed state transitions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Twinkle Twinkle Little Star (Audio)</h3>
+            <span class="badge">Arduino</span> <span class="badge">Breadboarding</span>
+            <p>Programmed an Arduino to interface with a speaker to generate melodic tones based on coded frequencies.</p>
         </div>
     </section>
 
     <section id="awards">
-        <h2>Awards & Honors</h2>
+        <h2>Awards & Certifications</h2>
         <div class="card">
-            <ul style="margin: 0; padding-left: 20px;">
-                <li><strong>Eta Kappa Nu Award</strong> (Fall 2024)</li>
-                <li><strong>UMass Lowell Dean’s List & Scholarships</strong> (2021 - Present)</li>
-                <li><strong>Somerville High School Community Scholarship</strong> (2021)</li>
+            <strong>Honors:</strong>
+            <ul>
+                <li>Eta Kappa Nu Award (Fall 2024)</li>
+                <li>UMass Lowell Dean’s List & Scholarships (2021 - Present)</li>
+                <li>Somerville High School Community Scholarship (2021)</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="card">
-            <ul style="margin: 0; padding-left: 20px;">
-                <li><strong>IEEE - Eta Kappa Nu Certification</strong> (Nov 2024)</li>
-                <li><strong>Real Estate Salesperson’s License</strong> (Aug 2023)</li>
+            <strong>Certifications:</strong>
+            <ul>
+                <li>IEEE - Eta Kappa Nu Certification (Nov 2024)</li>
+                <li>Real Estate Salesperson’s License (Aug 2023)</li>
             </ul>
         </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p><strong>MS in Electrical Engineering</strong> | UMass Lowell (GPA 4.0)</p>
-        <p><strong>BS in Electrical Engineering</strong> | UMass Lowell (GPA 3.75)</p>
+        <div class="card">
+            <p><strong>MS in Electrical Engineering</strong> | UMass Lowell (GPA 4.0)</p>
+            <p><strong>BS in Electrical Engineering</strong> | UMass Lowell (GPA 3.75)</p>
+        </div>
     </section>
 
 </div>
