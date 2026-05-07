@@ -1,5 +1,21 @@
-# githubportfolio
-Recently graduated Electrical Engineer (MS) with special experience in PCB design and hardware integration. I enjoy working with cross-functional teams in the life sciences industry to build and troubleshoot systems that keep automated machinery operating for long periods of time.
+# Hello, I'm Rohit Dulku
 
+**Electrical Engineer | Hardware/Mechanical Design | Systems Integration**
 
-Known for creating a 48 cell lighted wall panel design along with a team of 4
+Electrical Engineer focusing on the full-cycle development of electronic systems. Experienced in translating complex technical requirements into functional, reliable hardware within industrial environments.
+
+---
+
+### Skills
+- **Hardware Development:** PCB Design (Altium 365), DFM/DFA, Signal Integrity, Power Management.
+- **Systems Integration:** Troubleshooting automated machinery, Firmware deployment, Sensor-to-UI integration.
+- **Technical Analysis:** MATLAB, LTspice, CST Studio, Multi-stage Analog Filter Design.
+
+### Key Project: Assistive Technology
+**Electrical Lead | Lighted Wall Panel**
+* Developed a 48-cell modular lighted wall panel system
+* Designed custom Arduino shields to prevent wiring issues and overlaps.
+
+### Contact
+[LinkedIn](https://linkedin.com) | [Email](mailto:rdulku950@gmail.com)
+
