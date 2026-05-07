@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         :root {
-            --primary: #2c3e50; /* Professional Navy */
-            --secondary: #3498db; /* Tech Blue */
+            --primary: #2c3e50; 
+            --secondary: #3498db; 
             --light: #f4f7f6;
             --text: #333;
         }
@@ -39,6 +39,7 @@
             justify-content: center;
             gap: 20px;
             z-index: 1000;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -46,7 +47,7 @@
             color: var(--primary);
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .container {
@@ -127,7 +128,6 @@
     <h1>ROHIT DULKU</h1>
     <p>Electrical Engineer (MS) | PCB Design | Hardware Integration</p>
     
-    <!-- Download Button correctly placed in Body -->
     <a href="/githubportfolio/Resume.pdf" class="resume-btn" target="_blank">
        <i class="fas fa-file-pdf"></i> Download Resume
     </a>
@@ -144,6 +144,8 @@
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#awards">Awards</a>
+    <a href="#certifications">Certifications</a>
 </nav>
 
 <div class="container">
@@ -173,6 +175,8 @@
 
     <section id="experience">
         <h2>Work Experience</h2>
+        
+        <!-- Role 1: Revvity -->
         <div class="card">
             <h3>Electrical Engineering Intern/Co-op | Revvity</h3>
             <p><em>May 2024 – Sep 2024 | Hopkinton, MA</em></p>
@@ -180,11 +184,23 @@
                 <li>Improved hardware by designing and modifying PCBs for Janus/Fontus liquid handling systems.</li>
                 <li>Managed component lifecycle updates and Peripump control board firmware (.hex).</li>
                 <li>Created detailed test reports and fabrication files (BOMs).</li>
-                <li>Programmed PCBs using MPLABs IPE, using .hex binary code</li> 
-                <li>Replaced PCBs inside of a machine, a process that required a lot of safety and time as there were many connections and identical cables hooked together.</li>
+                <li>Programmed PCBs using MPLABs IPE and .hex binary code.</li>
+                <li>Replaced PCBs inside machinery, managing complex wiring and identical cable connections under strict safety protocols.</li>
             </ul>
             <img src="/githubportfolio/images/janus.jpeg" alt="Janus Machine Integration" class="project-img">
             <img src="/githubportfolio/images/pcb.jpeg" alt="PCB Validation" class="project-img">
+        </div>
+
+        <!-- Role 2: Circuits II LA -->
+        <div class="card">
+            <h3>Circuits II Learning Assistant | UMass Lowell</h3>
+            <p><em>Aug 2024 – Dec 2024 | Lowell, MA</em></p>
+            <ul>
+                <li>Graded and provided technical feedback on lab reports for undergraduate students.</li>
+                <li>Managed equipment use and monitored safety activity during laboratory sessions.</li>
+                <li>Assisted students with utilizing oscilloscopes, function generators, and power supplies.</li>
+                <li>Provided solutions to complex electrical equations and supported student problem-solving.</li>
+            </ul>
         </div>
     </section>
 
@@ -203,6 +219,27 @@
             <span class="badge">Arduino</span> <span class="badge">Sensors</span>
             <p>Automated liquid level indicator using water level sensors and LCD feedback. Programmed 3-stage threshold logic for user alerts.</p>
             <img src="/githubportfolio/images/cup.jpeg" alt="Measuring Cup Project" class="project-img">
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2>Awards & Honors</h2>
+        <div class="card">
+            <ul style="margin: 0; padding-left: 20px;">
+                <li><strong>Eta Kappa Nu Award</strong> (Fall 2024)</li>
+                <li><strong>UMass Lowell Dean’s List & Scholarships</strong> (2021 - Present)</li>
+                <li><strong>Somerville High School Community Scholarship</strong> (2021)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="card">
+            <ul style="margin: 0; padding-left: 20px;">
+                <li><strong>IEEE - Eta Kappa Nu Certification</strong> (Nov 2024)</li>
+                <li><strong>Real Estate Salesperson’s License</strong> (Aug 2023)</li>
+            </ul>
         </div>
     </section>
 
